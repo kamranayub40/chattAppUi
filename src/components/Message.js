@@ -6,9 +6,9 @@ export default function Message({ message }) {
     return (
         <>
         <div className={`message ${message.isMainUser ? 'sent' : 'received'}`}>
+            <Avatar/>
 
                 
-            <Avatar/>
             {message.msg}
             <div className="metadata">
                 <span className="date">{message.date.toLocaleString()}</span>
